@@ -1,0 +1,128 @@
+.cart {
+
+}
+
+.cart-item {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+.cart-text {
+    display: flex;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 100px;
+    align-items: center;
+margin-bottom: 5px;
+    font-weight: 600;
+    color: #fff;
+}
+.cart-item .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 3px 12px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.cartbtn {
+margin-top: 1rem;
+margin-right: 10px;
+    position: relative;
+    background-color: black;
+    color: #999;
+    font-size: 30px;
+}
+.cartbtn-item {
+    position: absolute;
+    bottom: -1px;
+    right: -5px;
+
+    color: black;
+    background-color: yellow;
+    border-radius: 100%;
+    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.listCart {
+    padding:5px 8px;
+    margin-top: 1rem;
+}
+.listCart_Items {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.listCart_Items-img {
+    width: 60px;
+    height: 80px;
+margin-right: 10px;    
+}
+.listCart_Items-center {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #999;
+    font-size: 16px;
+}
+.listCart_Items-center h4 {
+    color: #fff;
+    letter-spacing: 0.4px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.listCart_Items-coins {
+    color: rgb(255, 255, 0);
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.pay {
+    color: #999;
+    display: flex;
+    flex-direction: column;
+}
+.payNav {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.payNav .payNav-text {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    
+}
+.payNav .pay-total {
+    text-align: center;
+color: yellow;
+    font-size: 24px;
+}
+.payNav .pay-total p {
+    color: #999;
+    font-size: 15px;
+}
+.pay-btn {
+    margin-top: 2rem;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
+    border: none;
+}
