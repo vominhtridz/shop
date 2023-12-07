@@ -1,8 +1,9 @@
 
 import { useContext } from 'react';
-import mycontext from '..//mycontext'
-import './Home.css'
+import mycontext from '../../mycontext'
+import './home.css'
 function Home({products}) {
+
     const listContext = useContext(mycontext)
     return (<div className='main'>
         <h1 className="heading">16 Product(s) found</h1>
@@ -22,7 +23,10 @@ function Home({products}) {
                 </span>
                 </nav>
                 </div>
-                <button className='box-btn' onClick={()=> listContext.addToCart(items)}>Add to cart</button>
+                <button className='box-btn' onClick={()=> {
+                    
+                    listContext.addToCart(items)}
+                }>Add to cart</button>
                 <span className='box-sale'>Free Shipping</span>
             
             </div>

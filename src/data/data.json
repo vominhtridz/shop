@@ -1,0 +1,16 @@
+{
+    "Products": [
+      { "id": 1, "name": "Áo len" },
+      { "id": 2, "name": "Áo phông" },
+      { "id": 3, "name": "Áo phồng" },
+      { "id": 4, "name": "Áo phông" },
+      { "id": 5, "name": "Áo phông" },
+      { "id": 6, "name": "Áo phông" },
+      { "id": 7, "name": "Áo phông" }
+    ],
+    "posts": [
+      { "id": 1, "title": "Hello World" },
+      { "id": 2, "title": "JSON Server Demo" }
+    ]
+  }
+  

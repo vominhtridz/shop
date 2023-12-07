@@ -1,27 +1,25 @@
 import './App.css'
-import Size from'./component/size/Size'
-import Cart from './component/cart/Cart'
-import Home from './component/Home'
-import { useEffect,useState } from 'react';
-import {Item} from './component/Items/Items'
-import mycontext from './mycontext'
+import React from 'react';
+import Header from './component/header/header';
+import Footer from './component/footer/footer';
+import HomePage from './pages/home/HomePage'
+import {  Route, Routes } from 'react-router-dom';
+import Loggin from './pages/loggin/loggin';
+import Register from './pages/register/register';
+import StoreCarts from './pages/StoreCarts/StoreCarts';
 function App() {
-  const [products , setProduct] = useState(Item);
-  const [selectSize, setSelectSize] = useState('L');
-  const [cartItems,setCartItem] = useState([]);
-  const addToCart = (product)=>setCartItem([...cartItems, product]);
-  useEffect(()=>{
-    let string = '$13'
-    console.log(string.replace('$', ''))
-  },[])
+
   return (
-    <mycontext.Provider value={{products,selectSize,addToCart}} >
-      <div className="App ">
-      <Size selectedSize= {selectSize} onSelectSize={setSelectSize}/>
-      <Home products = {products.filter((product)=>product.size === selectSize)}  />
-      <Cart cartItem={cartItems}/>
-      </div>
-    </mycontext.Provider>
+    <div className='App'>
+          <Header/>
+          <Routes>
+          <Route path='/'  element={<HomePage/>}/>
+          <Route path='/loggin'  element={<Loggin/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/cart' element={<StoreCarts/>}/>
+          </Routes>
+          <Footer/>
+    </div>
   );
 }
 

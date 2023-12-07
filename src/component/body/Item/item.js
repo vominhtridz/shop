@@ -1,9 +1,9 @@
 
-import blackT_shirt from '..//..//img/blackT_shirt.jpg'
-import BlueT_shirt from '..//..//img/BlueT_Shirt.jpg'
-import greenT_shirt from '..//..//img/greenT_shirt.jpg'
-import VioletT_shirt from '..//..//img/VioletT_shirt.jpg'
-import WomenT_shirt from '..//..//img/WomenT_shirt.jpg'
+import blackT_shirt from '..//..//..//img/blackT_shirt.jpg'
+import BlueT_shirt from '..//..//..//img/BlueT_Shirt.jpg'
+import greenT_shirt from '..//..//..//img/greenT_shirt.jpg'
+import VioletT_shirt from '..//..//..//img/VioletT_shirt.jpg'
+import WomenT_shirt from '..//..//..//img/WomenT_shirt.jpg'
 const Item = [
     {
         title: 'A Beautiful Black T Shirt',
